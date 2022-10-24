@@ -26,6 +26,8 @@ public class PostService {
     return repository.save(post);
   }
 
+  // логика раб метода заключается в удалении метода
+  // тут не нужны прореки тк как главное чтобы метод удалил пост по номеру
   public void removeById(long id) {
     repository.removeById(id);
   }
