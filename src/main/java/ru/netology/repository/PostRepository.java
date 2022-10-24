@@ -24,13 +24,8 @@ public class PostRepository {
     }
 
     public Optional<Post> getById(long id) {
-        try {
-           return Optional.ofNullable(historyMsg.get(id));
-        } catch (NotFoundException e) {
-           e.printStackTrace();
-           e.set
-        }
-        return null;
+        return Optional.ofNullable(historyMsg.get(id));
+
     }
 
     public Post save(Post post) {
@@ -46,7 +41,7 @@ public class PostRepository {
     }
 
     public void removeById(long id) {
-      historyMsg.remove(id);
+        historyMsg.remove(id);
     }
 }
 
